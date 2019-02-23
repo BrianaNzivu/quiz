@@ -5,93 +5,47 @@
     <link src="css/style.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>QUIZ</title>
+    <title>JAVASCRIPTQUIZ</title>
   </head>
   <body>
-    <div class="container">
-      <h1>QUIZ</h1>
-      <p>1.What does HTML stand for?</p>
-      <div class="one">
-        <label>
-          <input type="radio" name="answer" value=" Hyper Text Markup Language" checked>
-          Hyper Text Markup Language
-        </label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Hyperlink Text Markup Language">
-            Hyperlink Text Markup Language
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" value="Home Text Markup Language">
-            Home Text Markup Language
-          </label>
-        </div>
-        <p>2.jQuery is a JS library.</p>
-        <div class="two">
-          <label>
-           <input type="radio" name="and" value="True" checked>
-           True
-          </label>
-          <div class="two">
-            <label>
-              <input type="radio" name="and" value="False">
-              False
-            </label>
-          </div>
-         </div>
-         <p>3.Choose the correct HTML element for the largest heading.
-           <div class="Three"
-            <label>
-              <input type="radio" name="go" value="<h1>" checked>
-              h1
-            </label>
-            <div class="Three">
-              <label>
-                <input type="radio" name="go" value="<h6" checked>
-                h6
-              </label>
-            </div>
-            <div class="Three">
-              <label>
-                <input type="radio" name="go" value="<h3" checked>
-                h3
-              </label>
-            </div>
-          </div>
-          <p>4.Where is the correct place to insert a JS script?</p>
-          <div class="four"
-           <div class="four">
-             <label>
-              <input type="radio" name="see" value="Body sector" checked>
-              Body Sector
-             </label>
-           </div>
-           <div class="four">
-             <label>
-               <input type="radio" name="see" value="Body and Head sector">
-               Body and Head Sector
-             </label>
-           </div>
-           <div class="four">
-             <label>
-               <input type="radio" name="see" value="Head sector">
-               Head Sector.
-             </label>
-           </div>
-          </div>
-          <p>5.jQuery uses CSS selectors to select elements</p>
-          <div class="five"
-           <label>
-             <input type="radio" name="five" value="True" checked>
-             True
-           </label>
-           <div class="five">
-             <label>
-               <input type="radio" name="five" value="False">
-               False
-             </label>
-           </div>
-         </div>
-    </div>
+    <h1><strong class="head">QUIZ</strong></h1>
+    <form name="Quiz">
+      <div class ="quizboard">
+    Question 1:Where is the correct place to insert JavaScript:<br>
+    <input type="radio" name="1"  value="A">Body<br></br>
+    <input type="radio" name="1" value="B">Head<br></br>
+    <input type="radio" name="1" value="C">Body and Head<br></br>
+
+    Question 2:An external Javascript file must contain the script tag:<br>
+    <input type="radio" name="2" value="A">True.<br></br>
+    <input type="radio" name="2" value="B">False.<br></br>
+
+    Question 3:How can you add a comment in JS:<br>
+    <input type="radio" name="3" value="A">//This is a comment<br></br>
+    <input type="radio" name="3" value="B">"This is comment"<br></br>
+    <input type="radio" name="3" value="C">This is a comment<br></br>
+
+    Question 4:Is JavaScript the same as Java<br>
+    <input type="radio" name="4" value="A">True.<br></br>
+    <input type="radio" name="4" value="B">False.<br></br>
+
+    Question 5:Which event occurs when the user clicks on a HTML element?<br>
+    <input type="radio" name="5"  value="A">onChange<br></br>
+    <input type="radio" name="5" value="B">onClick<br></br>
+    <input type="radio" name="5" value=C>onMouseClick<br></br>
+
+    Question 6:What does NULL mean in Javascript?<br>
+    <input type="radio" name="6"  value="A">Represents value that cannot undergo arithmetic operations.<br></br>
+    <input type="radio" name="6" value="B">Represents infinty and beyond.<br></br>
+    <input type="radio" name="6" value="C">Represents no object<br></br>
+
+    Question 7:Which operator is used to assign a valie to a variable?<br>
+    <input type="radio" name="7"  value="A">*<br></br>
+    <input type="radio" name="7" value="B">+.<br></br>
+    <input type="radio" name="7" value="C">=.<br></br>
+
+    Question 8:jQuery a JavaScript library:<br>
+    <input type="radio" name="8"  value="A">True<br></br>
+    <input type="radio" name="8" value="B">False<br></br>
+    
+    <input type="button" value="Submit" onClick="answer()">
