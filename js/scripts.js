@@ -1,66 +1,55 @@
-//business (or back-end) logic:
-$(document).ready(function() {
-  $("button#submit").click(function() {
-    $("input#submit").click(function(event){
-      event.preventDefault();
+$(document).ready(function(){
+  $("button#submit").click(function(){
+  $("input#submit").click(function(event){
+    event.preventDefault();
+  var answer1=$("input:radio[name=r1]:checked").val();
+  var answer2=$("input:radio[name=r2]:checked").val();
+  var answer3=$("input:radio[name=r3]:checked").val();
+  var answer4=$("input:radio[name=r4]:checked").val();
+  var answer5=$("input:radio[name=r5]:checked").val();
+  var answer6=$("input:radio[name=r6]:checked").val();
+  var answer7=$("input:radio[name=r7]:checked").val();
+  var answer8=$("input:radio[name=r8]:checked").val();
+  var answer9=$("input:radio[name=r9]:checked").val();
+  var answer10=$("input:radio[name=r10]:checked").val();
+  var marks=0
+
+  if (answer1=="B") {
+          marks+=10;
+  }
+  if (answer2=="A") {
+          marks+=10;
+  }
+  if (answer3=="A") {
+          marks+=10;
+  }
+  if (answer4=="B") {
+          marks+=10;
+  }
+  if (answer5=="B") {
+          marks+=10;
+  }
+  if (answer6=="C") {
+          marks+=10;
+  }
+  if (answer7=="C") {
+          marks+=10;
+  }
+  if (answer8=="A") {
+          marks+=10;
+  }
+  if (answer9=="B") {
+          marks+=10;
+  }
+  if (answer10=="A") {
+          marks+=10;
+  }
+  alert('you have'+marks)
+  });
+  var total=100
+  var max=100
+  var percentage=(marks/max)*total
+
+  $("#output").text(percentage);
 });
 });
-
-var answerOne=document.Quiz.r1.value;
-var answerTwo=document.Quiz.r2.value;
-var answerThree=document.Quiz.r3.value;
-var answerFour=document.Quiz.r4.value;
-var answerFive=document.Quiz.r5.value;
-var answerSix=document.Quiz.r6.value;
-var answerSeven=document.Quiz.r7.value;
-var answerEight=document.Quiz.r8.value;
-var marks=0
-
-if(answerOne==="B") {
-  marks+=10;
-} else {
-  marks+=0;
-};
-
-if(answerTwo==="A") {
-  marks+=10;
-} else {
-  marks+=0;
-}
-
-if(answerThree==="A") {
-  marks+=10;
-} else {
-  marks +=0;
-}
-
-if (answerFour==="B") {
-  marks+=10;
-} else{
-  marks+=0;
-}
-
-if (answerFive==="B") {
-  marks+=10;
-}else {
-  marks+=0;
-}
-
-if(answerSix==="C") {
-  marks+=10;
-}else {
-  marks+=0;
-}
-
-if(answerSeven==="C") {
-  marks+=10
-} else {
-  marks+=0;
-}
-
-if(answerEight==="A") {
-  marks+=10;
-} else {
-  marks+=0;
-}
-var results=[r1+r2+r3+r4+r5+r6+r7+r8+r9];
