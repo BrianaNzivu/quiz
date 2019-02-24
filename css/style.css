@@ -1,3 +1,13 @@
-h2{
+h1{
   text-align: center;
+  background-color: #041c44;
+  font-weight: bold;
+  font-family: monospace;
+  color: #f2f4f4;
+}
+#jumbotron{
+  background-color:#e8d5b7; !important;
+}
+body{
+  background-color: #e8d5b7;
 }
