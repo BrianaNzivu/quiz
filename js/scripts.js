@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  object.onclick=function(){Submit}
     $("form#Quiz").submit(function(event) {
-    event.preventDefault();
+      $("button#yes").click(function(){
+
   var one=parseInt($("input:radio[name=r1]:checked").val());
   var two=parseInt($("input:radio[name=r2]:checked").val());
   var three=parseInt($("input:radio[name=r3]:checked").val());
@@ -12,40 +12,71 @@ $(document).ready(function(){
   var eight=parseInt($("input:radio[name=r8]:checked").val());
   var nine=parseInt($("input:radio[name=r9]:checked").val());
   var ten=parseInt($("input:radio[name=r10]:checked").val());
+    var Result = 0;
+    if (one ==="A"){
+      Result += 10;
+    }
+    else {
+      Result +=0;
+    }
+    if (two ==="A"){
+      Result += 10;
+    }
+    else {
+      Result +=0;
+    }
+    if (three ==="A"){
+      Result += 10;
+    }
+    else {
+      Result +=0;
+    }
+    if (four ==="B"){
+      Result += 10;
+    }
+    else {
+      Result +=0;
+    }
+    if (five ==="B"){
+      Result += 10;
+    }
+    else {
+      Result +=0;
+}
+  if (six ==="C"){
+    Result += 10;
+  }
+  else {
+    Result +=0;
+  }
+  if (seven ==="C"){
+    Result += 10;
+  }
+  else {
+    Result +=0;
+  }
+  if (eight ==="A"){
+    Result += 10;
+  }
+  else {
+    Result +=0;
+  }
+  if (nine ==="A"){
+    Result += 10;
+  }
+  else {
+    Result +=0;
+  }
+  if(ten==="correct"){
+    Result+=10
+  }
+  else {
+    Result+=0
 
-  var marks=0
-
-  if (one==="B") {
-          marks+=10;
   }
-  if (two==="A") {
-          marks+=10;
-  }
-  if (three==="A") {
-          marks+=10;
-  }
-  if (four==="B") {
-          marks+=10;
-  }
-  if (five==="B") {
-          marks+=10;
-  }
-  if (six==="C") {
-          marks+=10;
-  }
-  if (seven==="C") {
-          marks+=10;
-  }
-  if (eight==="A") {
-          marks+=10;
-  }
-  if (nine==="B") {
-          marks+=10;
-  }
-  if (ten==="A") {
-          marks+=10;
-  }
-  var results=[one+two+three+four+five+six+seven+eight+nine+ten]
-  alert('you have'+results)
-  });
+$("#results").text("Your score is: "  +Result +"%");
+$("#results").show();
+event.preventDefault();
+});
+});
 });
