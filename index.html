@@ -11,59 +11,58 @@
 
    <div class="container">
   <div class="jumbotron">
-    <form name="Quiz">
+    <form id="Quiz">
       <div class ="quizboard">
     Question 1:Where is the correct place to insert JavaScript:<br>
-    <input type="radio" name="r1"  value="A">Body<br></br>
-    <input type="radio" name="r1" value="B">Head<br></br>
-    <input type="radio" name="r1" value="C">Body and Head<br></br>
+    <input type="radio" name="r1"  value="00">Body<br></br>
+    <input type="radio" name="r1" value="10">Head<br></br>
+    <input type="radio" name="r1" value="00">Body and Head<br></br>
 
     Question 2:An external Javascript file must contain the script tag:<br>
-    <input type="radio" name="r2" value="A">True.<br></br>
-    <input type="radio" name="r2" value="B">False.<br></br>
+    <input type="radio" name="r2" value="10">True.<br></br>
+    <input type="radio" name="r2" value="00">False.<br></br>
 
     Question 3:How can you add a comment in JS:<br>
-    <input type="radio" name="r3" value="A">//This is a comment<br></br>
-    <input type="radio" name="r3" value="B">"This is comment"<br></br>
-    <input type="radio" name="r3" value="C">This is a comment<br></br>
+    <input type="radio" name="r3" value="10">//This is a comment<br></br>
+    <input type="radio" name="r3" value="00">"This is comment"<br></br>
+    <input type="radio" name="r3" value="10">This is a comment<br></br>
 
     Question 4:Is JavaScript the same as Java<br>
-    <input type="radio" name="r4" value="A">True.<br></br>
-    <input type="radio" name="r4" value="B">False.<br></br>
+    <input type="radio" name="r4" value="00">True.<br></br>
+    <input type="radio" name="r4" value="10">False.<br></br>
 
     Question 5:Which event occurs when the user clicks on a HTML element?<br>
-    <input type="radio" name="r5"  value="A">onChange<br></br>
-    <input type="radio" name="r5" value="B">onClick<br></br>
-    <input type="radio" name="r5" value=C>onMouseClick<br></br>
+    <input type="radio" name="r5"  value="00">onChange<br></br>
+    <input type="radio" name="r5" value="10">onClick<br></br>
+    <input type="radio" name="r5" value="10">onMouseClick<br></br>
 
     Question 6:What does NULL mean in Javascript?<br>
-    <input type="radio" name="r6"  value="A">Represents value that cannot undergo arithmetic operations.<br></br>
-    <input type="radio" name="r6" value="B">Represents infinty and beyond.<br></br>
-    <input type="radio" name="r6" value="C">Represents no value or no object<br></br>
+    <input type="radio" name="r6"  value="00">Represents value that cannot undergo arithmetic operations.<br></br>
+    <input type="radio" name="r6" value="00">Represents infinty and beyond.<br></br>
+    <input type="radio" name="r6" value="10">Represents no value or no object<br></br>
 
     Question 7:Which operator is used to assign a valie to a variable?<br>
-    <input type="radio" name="r7"  value="A">*<br></br>
-    <input type="radio" name="r7" value="B">+.<br></br>
-    <input type="radio" name="r7" value="C">=.<br></br>
+    <input type="radio" name="r7"  value="00">*<br></br>
+    <input type="radio" name="r7" value="00">+.<br></br>
+    <input type="radio" name="r7" value="10">=.<br></br>
 
     Question 8:jQuery a JavaScript library:<br>
-    <input type="radio" name="r8"  value="A">True<br></br>
-    <input type="radio" name="r8" value="B">False<br></br>
+    <input type="radio" name="r8"  value="10">True<br></br>
+    <input type="radio" name="r8" value="00">False<br></br>
 
     Question 9:How  do we declare a JavaScript variable:<br>
-    <input type="radio" name="r9" value="A">variable mycar<br></br>
-    <input type="radio" name="r9" value="B">var myCar<br></br>
-    <input type="radio" name="r9" value="C">v myCAr<br></br>
+    <input type="radio" name="r9" value="00">variable mycar<br></br>
+    <input type="radio" name="r9" value="10">var myCar<br></br>
+    <input type="radio" name="r9" value="00">v myCAr<br></br>
 
     Question 10:What will the following code return:Boolean(10>9):<br>
-    <input type="radio" name="r10" value="A">True<br></br>
-    <input type="radio" name="r10" value="B">False<br></br>
+    <input type="radio" name="r10" value="10">True<br></br>
+    <input type="radio" name="r10" value="0">False<br></br>
   </div>
-  <button type="submit" class="btn btn primary" id="yes">Submit</button>
+  <button type="submit" class="btn btn primary" id="submit">Submit</button>
 </form>
 <div id="answer"></div>
 <div id="result"></div>
-<!-- <button type="submit" class="btn btn-primary" id="hello">Submit</button> -->
 
     <div class ="results">
       <p>Your results are:</p>

@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("form#Quiz").submit(function(event) {
-      $("button#yes").click(function(){
-
+    event.preventDefault();
   var one=parseInt($("input:radio[name=r1]:checked").val());
   var two=parseInt($("input:radio[name=r2]:checked").val());
   var three=parseInt($("input:radio[name=r3]:checked").val());
@@ -12,71 +11,8 @@ $(document).ready(function(){
   var eight=parseInt($("input:radio[name=r8]:checked").val());
   var nine=parseInt($("input:radio[name=r9]:checked").val());
   var ten=parseInt($("input:radio[name=r10]:checked").val());
-    var Result = 0;
-    if (one ==="A"){
-      Result += 10;
-    }
-    else {
-      Result +=0;
-    }
-    if (two ==="A"){
-      Result += 10;
-    }
-    else {
-      Result +=0;
-    }
-    if (three ==="A"){
-      Result += 10;
-    }
-    else {
-      Result +=0;
-    }
-    if (four ==="B"){
-      Result += 10;
-    }
-    else {
-      Result +=0;
-    }
-    if (five ==="B"){
-      Result += 10;
-    }
-    else {
-      Result +=0;
-}
-  if (six ==="C"){
-    Result += 10;
-  }
-  else {
-    Result +=0;
-  }
-  if (seven ==="C"){
-    Result += 10;
-  }
-  else {
-    Result +=0;
-  }
-  if (eight ==="A"){
-    Result += 10;
-  }
-  else {
-    Result +=0;
-  }
-  if (nine ==="A"){
-    Result += 10;
-  }
-  else {
-    Result +=0;
-  }
-  if(ten==="correct"){
-    Result+=10
-  }
-  else {
-    Result+=0
-
-  }
-$("#results").text("Your score is: "  +Result +"%");
-$("#results").show();
-event.preventDefault();
-});
+  var total=(one+two+three+four+five+six+seven+eight+nine+ten)
+  var percent=((total/100)*100);
+   $("#results").text("Your score is:"+percent+"%");
 });
 });
