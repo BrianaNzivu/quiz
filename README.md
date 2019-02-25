@@ -4,7 +4,14 @@
 ## Description
  This is a quiz which has been setup mainly to test on a software developers knowledge on java script which is a very important language.This website is mainly used for educational purposes especially beginners of programming.
 ## Known bugs}
-none but feel free to notify me incase you come across one.
+None but feel free to notify me in case you come across one.
+## BDD
+ BEHAVIOUR              | INPUT             | OUTPUT |   |   |
+------------------------|-------------------|--------|---|---|
+ When answer is correct | 10 Points awarded | 10%    |   |   |
+ when answer is wrong   | 0 points awarded  | 0%     |   |   |
+                        |                   |        |   |   |
+
 ## Technologies Used
 * JavaScript
 * css
