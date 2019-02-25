@@ -10,7 +10,7 @@ None but feel free to notify me in case you come across one.
 ------------------------|-------------------|--------|---|---|
  When answer is correct | 10 Points awarded | 10%    |   |   |
  when answer is wrong   | 0 points awarded  | 0%     |   |   |
-                        
+              
 
 ## Technologies Used
 * JavaScript
