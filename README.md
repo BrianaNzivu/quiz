@@ -6,10 +6,10 @@
 ## Known bugs}
 None so far but feel free to notify me in case you come across one.
 ## BDD
- BEHAVIOR              | INPUT             | OUTPUT |   |   |
-------------------------|-------------------|--------|---|---|
- When answer is correct | 10 Points awarded | 10%    |   |   |
- when answer is wrong   | 0 points awarded  | 0%     |   |   |
+ BEHAVIOR              | INPUT              | OUTPUT|   
+------------------------|-------------------|-------|
+ When answer is correct | 10 Points awarded | 10%   |
+ when answer is wrong   | 0 points awarded  | 0%    |  
 ## Technologies Used
 * JavaScript
 * css
