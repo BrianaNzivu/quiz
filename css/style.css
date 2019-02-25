@@ -11,7 +11,7 @@ h1{
 body{
   background-color: #e8d5b7;
 }
-.results{
+#results{
   text-align: center;
   font-style: oblique;
   font-family: monospace;
