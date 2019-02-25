@@ -11,8 +11,8 @@ $(document).ready(function(){
   var eight=parseInt($("input:radio[name=r8]:checked").val());
   var nine=parseInt($("input:radio[name=r9]:checked").val());
   var ten=parseInt($("input:radio[name=r10]:checked").val());
-  var total=(one+two+three+four+five+six+seven+eight+nine+ten)
+  var total=(one+two+three+four+five+six+seven+eight+nine+ten);
   var percent=((total/100)*100);
-   $("#results").text("Your score is:"+percent+"%");
+   $("#result").text("Your score is:"+percent+"%");
 });
 });
