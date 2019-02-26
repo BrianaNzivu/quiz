@@ -19,3 +19,6 @@ body{
 #submit{
   align-items: center;
 }
+.quizboard{
+  font-family: monospace;
+}

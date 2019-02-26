@@ -1,3 +1,4 @@
+//Business (or back-end)logic:
 $(document).ready(function(){
     $("form#Quiz").submit(function(event) {
     event.preventDefault();
@@ -13,6 +14,7 @@ $(document).ready(function(){
   var ten=parseInt($("input:radio[name=r10]:checked").val());
   var total=(one+two+three+four+five+six+seven+eight+nine+ten);
   var percent=((total/100)*100);
+  //User inetrface (or front-end)logic:
    $("#result").text("Your score is:"+percent+"%");
 });
 });
